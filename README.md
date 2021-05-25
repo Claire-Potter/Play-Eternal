@@ -653,22 +653,29 @@ To maintain the code the following actions are taken:
 ![play-eternal-files](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/play-eternal-files.PNG)
 
 8.The HTML files will be at top level and are called:
-	* index.html - this is the home page
-	* about.html - this is the all about sensory play page
-	* feedback.html - this is the hear from each other page
-	* contact.html - this  is the get in touch page
+
+* index.html - this is the home page
+* about.html - this is the all about sensory play page
+* feedback.html - this is the hear from each other page
+* contact.html - this  is the get in touch page
+	
 9. The assets folder contains the following sub-folders:
 
-	* css
-		* contains the stylesheet.css file
-	* images 
-		* contains all images used on the site
-	* javascript
-		* contains the javascript file for the sticky header
+* css
+  * contains the stylesheet.css file
+* images 
+  * contains all images used on the site
+* javascript
+  * contains the javascript file for the sticky header
 		* 
 10. Open the file in which the code needs to be maintained or changed
+
 11. Make the required changes
+
+![changes](hhttps://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/make-changes.PNG)
+
 12. Select Cntrl S to save changes (the white dot against the tab in which the code was changed will now disappear)
+
 13. In the terminal type in "python3 -m http.server" and select enter
 
 ![python3](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/python3.PNG)
@@ -679,30 +686,31 @@ To maintain the code the following actions are taken:
 
 15. The preview of the site will load to check and test changes
 
-![changes](hhttps://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/make-changes.PNG)
+![changes](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/changes.PNG)
 
 16. To save the changes back to github the following process needs to be followed:
-	* open a new terminal by selecting the menu icon, going to Terminal and selectiong New Terminal
+
+* open a new terminal by selecting the menu icon, going to Terminal and selectiong New Terminal
 
 ![menu](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/menu.PNG)
 
-17. Add the code to gitpod by typing in "git add ." in the new terminal and press enter
+* Add the code to gitpod by typing in "git add ." in the new terminal and press enter
 
 ![git-add](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-add.PNG)
 
-18. Commit the code to gitpod by typing in "git commit -m "Change header background colour to darkcyan" and press enter
+* Commit the code to gitpod by typing in "git commit -m "Add a short message here" and press enter
 
 ![git-commit](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-commit.PNG)
 
-19. Push the code back down to github by typing in "git push" select enter
+* Push the code back down to github by typing in "git push" select enter
 
 ![git-push](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-push.PNG)
 
-20. From the github side, refresh the repository page and the commit will reflect
+* From the github side, refresh the repository page and the commit will reflect
 
 ![change-github](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/change-github.PNG)
 
-21. Open the item to view the commit changes
+* Open the item to view the commit changes
 
 ![commit](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/commit.PNG)
 
@@ -751,7 +759,9 @@ The website was deployed on GitHub using the following steps:
 ![play-eternal-repository](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/play-eternal-repository.PNG)
 
 5. At the top of the page on the right-hand side select to Fork the repository
-![https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/Fork-own-copy.PNG)
+
+![fork-own-copy](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/Fork-own-copy.PNG)
+
 6. Your own version of the repository will create
 
 ![own-version](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/own-version.PNG)
