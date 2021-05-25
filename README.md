@@ -39,7 +39,9 @@ Click Here to access the site.
 	* [Performance Testing](#performance-testing)
 * [Deployment](#deployment)
 	* [Development Interface](#development-interface)
+	* [Maintaining Code](#maintaining-code)
 	* [Page Deployment](#page-deployment)
+	* [How to Fork the Repository](#how-to-fork-the-repository) 
 * [References](#references)
 	* [Code](#code)
 	* [Content](#content)
@@ -633,6 +635,79 @@ This website was developed on Gitpod using the Code Institute student template w
 
 The deployed version of the website is the master.
 
+## Maintaining Code
+
+To maintain the code the following actions are taken:
+
+1. Log into GitHub
+2. Go to the repositories tab at the top of the screen
+3. Click on the repository named Play-Eternal
+
+![repositories](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/repositories.JPG)
+
+4. Once in the repository select the green icon GitPod to open the code on GitPod
+
+![open-gitpod](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/open-code-gitpod.PNG)
+
+5. Gitpod will load
+6. The Play Eternal Master will open
+7. The Play Eternal folders and files will be visible on the left hand side
+
+![play-eternal-files](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/play-eternal-files.PNG)
+
+8.The HTML files will be at top level and are called:
+	* index.html - this is the home page
+	* about.html - this is the all about sensory play page
+	* feedback.html - this is the hear from each other page
+	* contact.html - this  is the get in touch page
+9. The assets folder contains the following sub-folders:
+	* css
+		* contains the stylesheet.css file
+	* images 
+		* contains all images used on the site
+	* javascript
+		* contains the javascript file for the sticky header
+10. Open the file in which the code needs to be maintained or changed
+11. Make the required changes
+12. Select Cntrl S to save changes (the white dot against the tab in which the code was changed will now disappear)
+13. In the terminal type in "python3 -m http.server" and select enter
+
+![python3](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/python3.PNG)
+
+14. Select to open the browser
+
+![open-browser](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/open-browser.PNG)
+
+15. The preview of the site will load to check and test changes
+
+![changes](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/changes)
+
+16. To save the changes back to github the following process needs to be followed:
+	* open a new terminal by selecting the menu icon, going to Terminal and selectiong New Terminal
+
+![menu](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/menu)
+
+17. Add the code to gitpod by typing in "git add ." in the new terminal and press enter
+
+![git-add](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-add)
+
+18. Commit the code to gitpod by typing in "git commit -m "Change header background colour to darkcyan" and press enter
+
+![git-commit](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-commit)
+
+19. Push the code back down to github by typing in "git push" select enter
+
+![git-push](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-push)
+
+20. From the github side, refresh the repository page and the commit will reflect
+
+![change-github](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/change-github)
+
+21. Open the item to view the commit changes
+
+![commit](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/commit)
+
+			
 ## Page Deployment
 
 The website was deployed on GitHub using the following steps:
@@ -662,7 +737,27 @@ The website was deployed on GitHub using the following steps:
 8. Click save and the url should be displayed above the source section
 9. Now that the link is displayed, the website is deployed and can be accessed in the browser by clicking on the url
 
+## How to Fork the Repository
 
+1. To be able to fork the repository, you will need your own github and gitpod accounts with linked permissions
+
+![updated-permissions](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/updated-permissions.PNG)
+
+2. From your github home page in the search bar search for Claire-Potter
+3. Under Users select the user Claire-Potter
+
+![user-claire-potter](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/user-claire-potter.PNG)
+4. On the repository page choose to open the Play-Eternal repository
+
+![play-eternal-repository](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/play-eternal-repository.PNG)
+5. At the top of the page on the right-hand side select to Fork the repository
+![fork-own-copy](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/fork-own-copy.PNG)
+6. Your own version of the repository will create
+
+![own-version](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/own-version.PNG)
+
+7. Select the green GitPod icon to open the workspace on GitPod
+8. Follow the steps in the Maintaining Code section above to make and save changes to your own repository
 
 # References
 
@@ -683,9 +778,8 @@ The following were used for any general queries or guidance required:
 2. The dropdown menu code is adapted from W3 school tutorial- adjusted for this site https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
 3. The Tooltip code is from W3 school tutorial and adapted for site https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom
 4. The Javascript from W3 schools tutorial for sticky nav bar https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky
-5. The Learn-More Button onclick code was taken from the following stack overflow chat https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
-6. The vertical line code is from https://stackoverflow.com/questions/31140935/how-do-i-add-vertical-line-on-my-menu-item-in-html-css 
-7. Button Shadow code from W3 school tutorials - https://www.w3schools.com/css/css3_buttons.asp
+5. The vertical line code is from https://stackoverflow.com/questions/31140935/how-do-i-add-vertical-line-on-my-menu-item-in-html-css 
+6. Shadow code from W3 school tutorials - buttons shadows - https://www.w3schools.com/css/css3_buttons.asp
 
 
 ## Content
