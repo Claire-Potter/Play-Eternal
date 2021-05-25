@@ -3,8 +3,7 @@
 A website that provides information on sensory play and advice on sensory play activities as well as specific advice on how sensory play helps children cope with anxiety. Professionals can refer parents to use the site to assist with at home sensory play.
 
 ![play-eternal-mockup](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/project-images/play-eternal-mock-up.JPG)
-
-Click Here to access the site.
+<a href="https://claire-potter.github.io/Play-Eternal/" target="_blank">Click Here</a> to access the site.
 
 
 ## Table of Contents
@@ -667,12 +666,12 @@ To maintain the code the following actions are taken:
   * contains all images used on the site
 * javascript
   * contains the javascript file for the sticky header
-		* 
+		
 10. Open the file in which the code needs to be maintained or changed
 
 11. Make the required changes
 
-![changes](hhttps://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/make-changes.PNG)
+![changes](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/make-changes.PNG)
 
 12. Select Cntrl S to save changes (the white dot against the tab in which the code was changed will now disappear)
 
@@ -742,6 +741,9 @@ The website was deployed on GitHub using the following steps:
 ![root](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/root.JPG)
 
 8. Click save and the url should be displayed above the source section
+
+![root](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/saved-page.PNG)
+
 9. Now that the link is displayed, the website is deployed and can be accessed in the browser by clicking on the url
 
 ## How to Fork the Repository
