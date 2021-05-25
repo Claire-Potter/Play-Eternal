@@ -285,6 +285,7 @@ I felt it was necessary to keep the pages clean and simple to prevent the user f
 10. The hover font colour for the navigation menu was changed from white to black for accessibility reasons.
 11. The green background colour was changed to a lighter version for accessibility reasons.
 12. The senses headers were changed from coloured-font to grey font for accessibility reasons.
+13. The footer layout has changed to be centered.
 
 
 ## Technologies
@@ -356,7 +357,7 @@ The Header is consistent across all four site pages. It contains the site logo a
     - The bar  includes the following:
 	    - The active page is highlighted with a different font colour and background colour. Font colour has been changed to black for accessibility reasons.
 	    
- ![Navigation Active image](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/project-images/navigation-active.PNG?raw=true)
+ ![Navigation Active image](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/project-images/navigation-active.png)
  
   - The All About Sensory Play includes a drop-down menu to the separate page sections as this is the longest page with the most content.
 	    
@@ -374,13 +375,13 @@ The footer section is fixed to the bottom of the page and it includes a logo and
 
  ![Footer Logo image](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/project-images/footer-logo.PNG?raw=true)
 
- - The logo is a smaller version of the Header logo but displayed vertically. Underneath the page copyright is included. It includes a link back to the home page as this is common for websites to do.
+ - The logo is a smaller version of the Header logo. Underneath the logo the social media icons and the page copyright are included. It includes a link back to the home page as this is common for websites to do.
 	 
 -   **Social Media Icons**
 
 ![Social Media Icons image](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/project-images/social-media-icons.PNG?raw=true)
 
-   -   The Social Media Icons are grouped together and included on the right hand side of the footer as this is a common section for the icons to be located so the user can expect to find them there.
+   -   The Social Media Icons are grouped together and included after the footer logo.
     - The Icons contain links to Facebook, Instagram and Twitter and the social media sites will open on individual pages so they do not take the user away from our site.
     - They provide the user with an easy way to connect to Play Eternal's social media sites to be able to interact socially.
 
@@ -403,11 +404,11 @@ The Home Page has been created to include a Hero Image with a text box overlay. 
 
 - The text area contains a call to action to parents, as our primary user, it provides description as to why they would need sensory play for their child and it then invites them to follow the learn more button to learn how to help their child. By utilising a call to action it entices the user to click to access the next page.
 
- -   **The Learn More Button**
+ -   **The Learn More Link**
 
  ![Learn More Image](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/project-images/learn-more-button.PNG?raw=true)
 
- - The learn more button will take the user to the All About Sensory Play page. It is formatted to stand out within the text area and includes a button shadow when the user hovers over it to provide the feeling of pushing a button.
+ - The learn more link will take the user to the All About Sensory Play page. It is formatted to stand out within the text area and includes a shadow when the user hovers over it to provide the feeling of pushing a button.
 
 	
 ## All About Sensory Play
@@ -489,7 +490,7 @@ The All About Sensory Play page is the main content page of the site. Its purpos
  - The form layout and display is kept as simple as possible to convey the message to the user that it is simple and easy to complete.
  - The name, surname, email, child/children's ages and feedback are added as input elements and are validated as required. The feedback on the website, questions and recommendations sections are added as text areas and are not required but optional.
  - This is the area in which a user can ask any questions they may have and provide their own feedback and recommendations which could be featured on the Hear from Each Other Page.
- - The Submit button reflects the same display options as the Learn More button found on the home page. 
+ - The Submit button reflects the same display options as the Learn More link found on the home page. 
 
   ### Features Left to Implement
 -   Chat Page
@@ -514,19 +515,15 @@ Please access the Play Eternal testing pack to view full testing of the site fea
 
 The following issues were experienced during the course of development:
 
-1. The Learn-More Button on the Home Page
-    * When the fixed Header with the navigation javascript was added, a z-index relationship had to be added to the page elements that had an absolute position, so that when scrolling they did not scroll over the Header but under. If the z-index was lower than the Header z-index, the elements scrolled under but the link from the learn-more button could not be clicked. If the z-index was equal or higher to the Header z-index, the link would work but the elements would be on top of the Header. I tried moving the button with the link in and out of divs and the page content div to get it right. I tried to change the button to a link, then a button with a link, then a div with a link. I tried setting various z-index values for the different elements.
-    * Through trial and error I came to a solution. The Learn-More Button was added, inside the content div, inside the home-page div and inside the hero-text div with the following html code:
-    
-
-`<button id="learn-more" onclick="location.href='about.html'">Learn More</button>`
-        
+1. The Learn-More Link on the Home Page
+    * When the fixed Header with the navigation javascript was added, a z-index relationship had to be added to the page elements that had an absolute position, so that when scrolling they did not scroll over the Header but under. If the z-index was lower than the Header z-index, the elements scrolled under but the learn-more link could not be clicked. If the z-index was equal or higher to the Header z-index, the link would work but the elements would be on top of the Header. I tried moving the link in and out of divs and the page content div to get it right. I tried to change the link to a button with a link, then a div with a link. I tried setting various z-index values for the different elements.
+    * Through trial and error I came to a solution. The Learn-More link was added, inside the content div, inside the home-page div and inside the hero-text div with the following html code       
    * The hero-text div position was absolute and the z-index set to 1.
    * The hero-area which contains the background image which the hero-text div sits on top of, the position was set to relative and the z-index to -1.
    * The header did not have a position set but has a z-index set to 2.
    
 2. The Javascript Sticky Navigation and Header
-     * Adding the javascript for the header and navigation bar to stick caused some issues with the ability to access the learn-more button link above as well as the form input and submit. As per above by setting the header z-index to 2 and not adding a named position the issue was resolved. I also experienced issues with getting the content padding correct for before scroll and after scrolling across various screen sizes, this too was resolved through trial and error.
+     * Adding the javascript for the header and navigation bar to stick caused some issues with the ability to access the learn-more link above as well as the form input and submit. As per above by setting the header z-index to 2 and not adding a named position the issue was resolved. I also experienced issues with getting the content padding correct for before scroll and after scrolling across various screen sizes, this too was resolved through trial and error.
      
  3. I found media queries tricky. I was focusing on trying to get the screen to render appropriately with the same page layout for all screen sizes. I eventually removed all of the media queries to start with a clean slate as it had got very messy. Using the Responsively App to test how the screen renders for different devices and screen widths, really helped me to visualise and test the media queries. I changed multiple elements display to flex I was then easily able to change flex directions for different screen sizes which helped with the previous issues I experienced. Setting the font to rem also helped with consistency of the display. 
     
@@ -647,7 +644,7 @@ To maintain the code the following actions are taken:
 
 4. Once in the repository select the green icon GitPod to open the code on GitPod
 
-![open-gitpod](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/open-code-gitpod.PNG)
+![open-code-gitpod](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/open-code-gitpod.PNG)
 
 5. Gitpod will load
 6. The Play Eternal Master will open
@@ -661,12 +658,14 @@ To maintain the code the following actions are taken:
 	* feedback.html - this is the hear from each other page
 	* contact.html - this  is the get in touch page
 9. The assets folder contains the following sub-folders:
+
 	* css
 		* contains the stylesheet.css file
 	* images 
 		* contains all images used on the site
 	* javascript
 		* contains the javascript file for the sticky header
+		* 
 10. Open the file in which the code needs to be maintained or changed
 11. Make the required changes
 12. Select Cntrl S to save changes (the white dot against the tab in which the code was changed will now disappear)
@@ -680,32 +679,32 @@ To maintain the code the following actions are taken:
 
 15. The preview of the site will load to check and test changes
 
-![changes](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/changes)
+![changes](hhttps://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/make-changes.PNG)
 
 16. To save the changes back to github the following process needs to be followed:
 	* open a new terminal by selecting the menu icon, going to Terminal and selectiong New Terminal
 
-![menu](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/menu)
+![menu](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/menu.PNG)
 
 17. Add the code to gitpod by typing in "git add ." in the new terminal and press enter
 
-![git-add](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-add)
+![git-add](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-add.PNG)
 
 18. Commit the code to gitpod by typing in "git commit -m "Change header background colour to darkcyan" and press enter
 
-![git-commit](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-commit)
+![git-commit](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-commit.PNG)
 
 19. Push the code back down to github by typing in "git push" select enter
 
-![git-push](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-push)
+![git-push](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/git-push.PNG)
 
 20. From the github side, refresh the repository page and the commit will reflect
 
-![change-github](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/change-github)
+![change-github](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/change-github.PNG)
 
 21. Open the item to view the commit changes
 
-![commit](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/commit)
+![commit](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/commit.PNG)
 
 			
 ## Page Deployment
@@ -750,8 +749,9 @@ The website was deployed on GitHub using the following steps:
 4. On the repository page choose to open the Play-Eternal repository
 
 ![play-eternal-repository](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/play-eternal-repository.PNG)
+
 5. At the top of the page on the right-hand side select to Fork the repository
-![fork-own-copy](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/fork-own-copy.PNG)
+![https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/Fork-own-copy.PNG)
 6. Your own version of the repository will create
 
 ![own-version](https://github.com/Claire-Potter/Play-Eternal/blob/master/project-documents/deployment/own-version.PNG)
