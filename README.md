@@ -36,6 +36,7 @@ A website that provides information on sensory play and advice on sensory play a
 	* [Code Validation](#code-validation)
 	* [Testing Accessibility](#testing-accessibility)
 	* [Performance Testing](#performance-testing)
+	* [Deployment Testing](#deployment-testing)
 * [Deployment](#deployment)
 	* [Development Interface](#development-interface)
 	* [Maintaining Code](#maintaining-code)
@@ -622,6 +623,10 @@ Please <a href="https://github.com/Claire-Potter/Play-Eternal/tree/master/projec
 ### Performance Testing
 
 [Click here](https://github.com/Claire-Potter/Play-Eternal/tree/master/project-documents/testing/lighthouse-reports) to access Google Lighthouse performance reports.
+
+### Deployment Testing
+
+The website was tested end to end after deployment to ensure that the functionality, content and style matches that of the development site. It was tested across multiple screen sizes and browsers. All post-deployment testing passed.
 
 # Deployment
 
